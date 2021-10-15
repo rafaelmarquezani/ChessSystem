@@ -1,9 +1,13 @@
 package Application;
 
+import Chess.ChessMatch;
+
 public class Program {
 
 	public static void main(String[] args) {
-		System.out.println("Hello!");
+		
+		ChessMatch chessmatch = new ChessMatch();
+		UI.printBoard(chessmatch.getPieces());
 	}
 
 }
